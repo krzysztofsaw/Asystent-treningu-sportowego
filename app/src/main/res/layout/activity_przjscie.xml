@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tk.a111.Przjscie">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/imageButton6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/imageButton5"
+                    android:layout_below="@+id/imageButton5"
+                    android:layout_marginTop="128dp"
+                    android:onClick="cliclminutnik"
+                    app:srcCompat="@drawable/minutnik"
+                    tools:layout_editor_absoluteX="68dp"
+                    tools:layout_editor_absoluteY="98dp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView7"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="OnClickStoper"
+                    app:srcCompat="@drawable/stopwatch"
+                    tools:layout_editor_absoluteX="68dp"
+                    tools:layout_editor_absoluteY="395dp" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="51dp"
+                    android:text="Stoper" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView7"
+                    android:layout_below="@+id/imageButton5"
+                    android:layout_marginTop="109dp"
+                    android:text="Minutnik" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

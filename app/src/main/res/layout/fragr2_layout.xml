@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/background_light"
+    android:gravity="center" >
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="349dp"
+            android:layout_height="250dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="249dp">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="BMI!!"
+                android:textColor="#244"
+                android:textSize="48sp" />
+
+            <ImageView
+                android:id="@+id/oko2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_below="@+id/textView5"
+                android:layout_marginStart="41dp"
+                android:layout_marginTop="31dp"
+                android:src="@drawable/oko" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="319dp"
+                android:layout_height="140dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/BMI"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="204dp" />
+
+            <TextView
+                android:id="@+id/TekstBMI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView3"
+                android:layout_below="@+id/textView5"
+                android:text="Moje BMI:"
+                android:textSize="32sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="344dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="360dp"
+            android:layout_height="203dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/relativeLayout2"
+            android:layout_marginTop="15dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="5dp">
+
+
+            <TextView
+                android:id="@+id/TekstWaga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="21dp"
+                android:text="Wpisz swoja Wage :"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/TekstWzrost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/editText"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:text="Wpisz swoj Wzrost: "
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="205dp"
+                android:layout_marginTop="70dp"
+                android:ems="9"
+                android:hint="Wzrost"
+                android:inputType="number"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="205dp"
+                android:layout_marginTop="10dp"
+                android:ems="9"
+                android:hint="Waga"
+                android:inputType="number"
+                android:textSize="15sp"/>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:onClick="ObliczBMI"
+                android:text="Oblicz" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

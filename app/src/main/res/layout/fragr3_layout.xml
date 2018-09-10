@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/background_light"
+    android:gravity="center" >
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout10"
+        android:layout_width="360dp"
+        android:layout_height="280dp"
+        android:layout_above="@+id/relativeLayout30"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RadioButton
+                    android:id="@+id/K"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="MK"
+                    android:text="Kobieta" />
+
+                <RadioButton
+                    android:id="@+id/M"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:onClick="MK"
+                    android:text="Mężczyzna" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ObliczBF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="13dp"
+            android:onClick="ObliczBF"
+            android:text="Oblicz" />
+
+        <TextView
+            android:id="@+id/TaliaBF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/EditWagaBF"
+            android:layout_alignParentStart="true"
+            android:text="Obwód Tali: "
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/WagaBF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ObliczBF"
+            android:layout_alignEnd="@+id/EditWagaBF"
+            android:layout_marginBottom="42dp"
+            android:text="Waga: "
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/EditWagaBF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/WagaBF"
+            android:layout_alignStart="@+id/EditTaliaBF"
+            android:ems="9"
+            android:hint="Waga"
+            android:inputType="number"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/EditTaliaBF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/EditWagaBF"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="23dp"
+            android:ems="9"
+            android:hint="Talia"
+            android:inputType="number"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout30"
+            android:layout_width="300dp"
+            android:layout_height="180dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="45dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="249dp">
+
+
+            <TextView
+                android:id="@+id/InfoBF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Zawartość tkanki tłuszczowej :"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/WynikBF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/oko3"
+                android:layout_toStartOf="@+id/oko3"
+                android:text="BODY FAT!!"
+                android:textColor="#244"
+                android:textSize="48sp" />
+
+            <ImageView
+                android:id="@+id/oko3"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/InfoBF"
+                android:src="@drawable/oko" />
+
+        </RelativeLayout>
+
+
+</RelativeLayout>
+

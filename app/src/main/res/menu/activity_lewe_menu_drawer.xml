@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/PlanyTreningowe"
+            android:icon="@drawable/ic_clipboard"
+            android:title="Plan Treningowy " />
+        <item
+            android:id="@+id/Atlas"
+            android:icon="@drawable/ic_exercise"
+            android:title="Atlas Ćwiczeń " />
+        <item
+            android:id="@+id/Narzedzia"
+            android:icon="@drawable/narzedzia"
+            android:title="Narzędzia" />
+        <item
+            android:id="@+id/Kalkulator"
+            android:icon="@drawable/kalkulator"
+            android:title="Kalkulatory"
+           />
+        <!--<item-->
+            <!--android:id="@+id/statystyki"-->
+            <!--android:icon="@drawable/ic_bar_chart"-->
+            <!--android:title="Statysyki " />-->
+        <item
+            android:id="@+id/O_aplikacji"
+            android:icon="@drawable/informacje"
+            android:title="O Aplikacji"
+            />
+
+
+
+    </group>
+
+
+
+</menu>

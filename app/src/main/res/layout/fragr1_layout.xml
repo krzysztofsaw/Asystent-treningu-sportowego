@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light"
+    android:gravity="center">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+        <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="349dp"
+                android:layout_height="312dp"
+                android:layout_alignStart="@+id/relativeLayout"
+                android:layout_below="@+id/linearLayout"
+                android:layout_marginTop="189dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="249dp">
+
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="319dp"
+                    android:layout_height="140dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/BMR"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="204dp" />
+
+                <TextView
+                    android:id="@+id/TekstZapotrzebowanie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/WynikBMR"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="Twoje zapotrzeboawnie to:"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:id="@+id/oko"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/TekstZapotrzebowanie"
+                    android:layout_below="@+id/TekstZapotrzebowanie"
+                    android:layout_marginStart="22dp"
+                    android:src="@drawable/oko" />
+
+                <TextView
+                    android:id="@+id/WynikBMR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="26dp"
+                    android:text="BMR!!"
+                    android:textColor="#244"
+                    android:textSize="48sp" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/K"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="MK"
+                        android:text="Kobieta" />
+
+                    <RadioButton
+                        android:id="@+id/M"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:onClick="MK"
+                        android:text="Mężczyzna" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="360dp"
+                android:layout_height="210dp"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:id="@+id/TekstWaga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/WagaBMR"
+                    android:layout_alignBottom="@+id/WagaBMR"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="19dp"
+                    android:text="Wpisz swoja Wage :"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TekstWzrost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/WzrostBMR"
+                    android:layout_alignBottom="@+id/WzrostBMR"
+                    android:layout_alignStart="@+id/TekstWaga"
+                    android:text="Wpisz swoj Wzrost: "
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/TekstWiek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/TekstWzrost"
+                    android:layout_centerVertical="true"
+                    android:text="Wiek: "
+                    android:textSize="15sp" />
+
+
+                <EditText
+                    android:id="@+id/WzrostBMR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/WagaBMR"
+                    android:layout_below="@+id/WagaBMR"
+                    android:ems="9"
+                    android:hint="Wzrost"
+                    android:inputType="number"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/WagaBMR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:ems="9"
+                    android:hint="Waga"
+                    android:inputType="number"
+                    android:textSize="15sp" />
+
+
+                <EditText
+                    android:id="@+id/WiekBMR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/WzrostBMR"
+                    android:ems="9"
+                    android:hint="Wiek"
+                    android:inputType="number"
+                    android:textSize="15sp" />
+
+
+                <Button
+                    android:id="@+id/ObliczBMR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="20dp"
+                    android:onClick="ObliczBMR"
+                    android:text="Oblicz" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+</RelativeLayout>
+

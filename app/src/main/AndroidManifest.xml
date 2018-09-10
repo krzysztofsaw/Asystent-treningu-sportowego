@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tk.a111">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="Asystent Treningu"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".AboutActivity"
+            android:parentActivityName=".AsystentTreningu" />
+        <activity
+            android:name=".AsystentTreningu"
+            android:label="@string/title_activity_lewe_menu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Wyszykiwarka"
+            android:parentActivityName=".AsystentTreningu" />
+        <activity
+            android:name=".Fragementy.Tabbet"
+            android:label="@string/title_activity_tabbet"
+            android:parentActivityName=".AsystentTreningu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Przjscie"
+            android:parentActivityName=".AsystentTreningu" />
+        <activity
+            android:name=".Minutnik"
+            android:parentActivityName=".Przjscie" />
+        <activity
+            android:name=".Stoper"
+            android:parentActivityName=".Przjscie" />
+        <activity android:name=".PierwszaLista" />
+        <activity android:name=".DrugaLista" />
+        <activity android:name=".cw1" />
+        <activity android:name=".cw2" />
+        <activity android:name=".cw3" />
+        <activity android:name=".cw4" />
+        <activity android:name=".cw5" />
+        <activity android:name=".OpisCwiczneia"></activity>
+        <activity android:name="com.example.tk.a111.paczka.EditDataActivity" />
+        <activity android:name="com.example.tk.a111.paczka.ListDataActivity" />
+        <activity android:name="com.example.tk.a111.paczka.Wpiszaktywnosc" />
+    </application>
+
+</manifest>
